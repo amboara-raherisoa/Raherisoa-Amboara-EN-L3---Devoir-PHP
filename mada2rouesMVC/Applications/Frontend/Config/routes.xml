@@ -1,0 +1,5 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<routes>
+    <route url="/mada2rouesMVC/Web/" module="Presentation" action="index" />
+    <route url="/mada2rouesMVC/Web/presentation-([0-9]+)\.html" module="Presentation" action="show" vars="id"/>
+</routes>

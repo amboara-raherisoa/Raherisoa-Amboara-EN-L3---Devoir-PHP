@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^admin/ /mada2rouesMVC/Web/backend.php [QSA,L]
+
+# Si le fichier auquel on tente d'accéder existe (si on veut accéder à une image par exemple), alors on ne réécrit pas l'URL.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /mada2rouesMVC/Web/frontend.php [QSA,L]
